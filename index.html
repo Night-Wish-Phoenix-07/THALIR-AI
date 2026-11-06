@@ -11,9 +11,95 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mascot.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="stars" id="stars" aria-hidden="true"></div>
+
+    <div class="page">
+      <header class="nav glass">
+        <div class="logo">
+          <span class="logo-dot">✦</span> THALIR <span class="logo-ai">AI</span>
+        </div>
+        <nav class="nav-buttons">
+          <button class="btn btn-ghost">Login</button>
+          <button class="btn btn-soft">Sign up</button>
+        </nav>
+      </header>
+
+      <main class="hero">
+        <section class="hero-text">
+          <p class="tagline">✨ A little friend. A big learning world.</p>
+          <h1>Hi, I'm <span class="gradient-text">THALIR</span>!</h1>
+          <p class="hero-sub">
+            I talk with you, understand you, teach you and grow with you.
+            Let's learn something wonderful today.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary">Start chatting 💜</button>
+            <button class="btn btn-soft">Upload my syllabus</button>
+          </div>
+        </section>
+
+        <section class="hero-mascot">
+          <div class="mascot-glow"></div>
+
+          <div class="mascot-wrap" role="img" aria-label="THALIR the robot friend">
+            <div class="mascot">
+              <div class="m-antenna"><span class="m-antenna-ball"></span></div>
+
+              <div class="m-head">
+                <div class="m-ear m-ear-left"></div>
+                <div class="m-ear m-ear-right"></div>
+                <div class="m-visor">
+                  <div class="m-eyes">
+                    <span class="m-eye"></span>
+                    <span class="m-eye"></span>
+                  </div>
+                  <div class="m-mouth"></div>
+                  <span class="m-cheek m-cheek-left"></span>
+                  <span class="m-cheek m-cheek-right"></span>
+                </div>
+              </div>
+
+              <div class="m-scarf"></div>
+
+              <div class="m-body">
+                <div class="m-heart">♥</div>
+              </div>
+
+              <div class="m-arm m-arm-left"></div>
+              <div class="m-arm m-arm-right"></div>
+              <div class="m-foot m-foot-left"></div>
+              <div class="m-foot m-foot-right"></div>
+            </div>
+            <div class="m-shadow"></div>
+          </div>
+        </section>
+      </main>
+
+      <section class="features">
+        <article class="card glass">
+          <div class="card-icon">💬</div>
+          <h3>AI Friend</h3>
+          <p>Chat casually, share how you feel, and have a friendly companion by your side.</p>
+        </article>
+        <article class="card glass">
+          <div class="card-icon">📚</div>
+          <h3>AI Teacher</h3>
+          <p>Upload your syllabus, PDFs or notes and learn one small concept at a time.</p>
+        </article>
+        <article class="card glass">
+          <div class="card-icon">🌱</div>
+          <h3>Learning Companion</h3>
+          <p>Track your progress, revise weak topics and celebrate every win together.</p>
+        </article>
+      </section>
+
+      <footer class="footer">Made with 💜 for curious learners</footer>
+    </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
